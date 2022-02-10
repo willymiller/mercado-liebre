@@ -1,0 +1,349 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header-top{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 40%;
+}
+
+.buscador{
+    margin-top: 10px;
+    width: 60%;
+    display: flex;
+    text-align: right;
+}
+
+.header-anuncio{
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.banner-foto{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+p{
+    font-size: 12px;
+}
+
+h3{
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.burger-menu{
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.formulario{
+    background-color: lightgrey;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.formulario-boton{
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.formulario-boton:hover{
+    background-color: #0022AA;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+}
+
+.iconos-footer{
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.secciones-footer{
+    padding-top: 20px;
+    line-height: 15px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+section{
+    padding-top: 5px;
+}
+
+article{
+    background-color: white;
+    margin: 10px;
+}
+
+.articulo-contenido{
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.articulo-venta{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.precio{
+    width: 30%
+}
+
+.descuento{
+    color: lime;
+    width: 70%;
+}
+
+.camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 2px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.description{
+    display: none;
+}
+
+.formulario{
+    margin-top: 10px;
+    padding: 30px 15px;
+}
+
+.formulario label{
+    font-weight: bold;
+}
+
+.formulario-control{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.copyright{
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 481px){
+    .header-top{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo{
+        width: 20%;
+    }
+    
+    .buscador{
+        display: flex;
+        width: auto;
+    }
+    
+    .header-anuncio{
+        font-weight: 400;
+        width: 30%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-top ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-top ul li{
+        margin: 0px 5px;
+    }
+    .nav-bottom ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-bottom ul li{
+        margin: 0px 5px;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+    .ultima-visita, .ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    article{
+        width: 40%;
+    }
+
+    article:hover .description{
+        display: block;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
+
+@media (min-width: 769px ){
+    .header-top{
+        display: flex;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .buscador{
+        width: auto;
+        height: 20px;
+    }
+
+    .buscador input{
+        margin-right: 5px;
+    }
+    
+    .header-anuncio{
+        font-weight: 400;
+        width: 30%;
+    }
+
+    .ultima-visita, .ofertas{
+        display: flex;
+    }
+
+    article{
+        width: 22%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-top ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-top ul li{
+        margin: 0px 5px;
+    }
+    .nav-bottom ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-bottom ul li{
+        margin: 0px 5px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .description{
+        display: block;
+    }
+
+    .camion{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        color: #39b54a;
+        border: 2px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .secciones-footer{
+        width: 33%;
+        line-height: 20px;
+        padding: 10px;
+    }
+    .copyright{
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+}
